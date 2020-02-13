@@ -12,6 +12,12 @@
 		84082FFC23F4011C004AF5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84082FFA23F4011C004AF5A2 /* Main.storyboard */; };
 		84082FFE23F4011E004AF5A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84082FFD23F4011E004AF5A2 /* Assets.xcassets */; };
 		8408300123F4011E004AF5A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84082FFF23F4011E004AF5A2 /* LaunchScreen.storyboard */; };
+		8408300A23F40485004AF5A2 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408300923F40485004AF5A2 /* APIRouter.swift */; };
+		8408300C23F51022004AF5A2 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408300B23F51022004AF5A2 /* HTTPMethods.swift */; };
+		8408300E23F5104C004AF5A2 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408300D23F5104C004AF5A2 /* APIRequest.swift */; };
+		8408301023F51677004AF5A2 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408300F23F51677004AF5A2 /* APIManager.swift */; };
+		8408301223F517C3004AF5A2 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408301123F517C3004AF5A2 /* APIServiceError.swift */; };
+		846924AA23F5587D00AED54C /* GJContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846924A923F5587D00AED54C /* GJContact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		84082FFD23F4011E004AF5A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8408300023F4011E004AF5A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8408300223F4011E004AF5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8408300923F40485004AF5A2 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		8408300B23F51022004AF5A2 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		8408300D23F5104C004AF5A2 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		8408300F23F51677004AF5A2 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		8408301123F517C3004AF5A2 /* APIServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
+		846924A923F5587D00AED54C /* GJContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJContact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +68,34 @@
 			children = (
 				84082FF423F4011C004AF5A2 /* AppDelegate.swift */,
 				84082FF823F4011C004AF5A2 /* ViewController.swift */,
+				8408300823F40229004AF5A2 /* API */,
+				846924AB23F5589B00AED54C /* Model */,
 				84082FFA23F4011C004AF5A2 /* Main.storyboard */,
 				84082FFD23F4011E004AF5A2 /* Assets.xcassets */,
 				84082FFF23F4011E004AF5A2 /* LaunchScreen.storyboard */,
 				8408300223F4011E004AF5A2 /* Info.plist */,
 			);
 			path = GoJackPractical;
+			sourceTree = "<group>";
+		};
+		8408300823F40229004AF5A2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8408300923F40485004AF5A2 /* APIRouter.swift */,
+				8408300F23F51677004AF5A2 /* APIManager.swift */,
+				8408300D23F5104C004AF5A2 /* APIRequest.swift */,
+				8408301123F517C3004AF5A2 /* APIServiceError.swift */,
+				8408300B23F51022004AF5A2 /* HTTPMethods.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		846924AB23F5589B00AED54C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				846924A923F5587D00AED54C /* GJContact.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8408301023F51677004AF5A2 /* APIManager.swift in Sources */,
+				8408300C23F51022004AF5A2 /* HTTPMethods.swift in Sources */,
 				84082FF923F4011C004AF5A2 /* ViewController.swift in Sources */,
+				8408300A23F40485004AF5A2 /* APIRouter.swift in Sources */,
 				84082FF523F4011C004AF5A2 /* AppDelegate.swift in Sources */,
+				8408300E23F5104C004AF5A2 /* APIRequest.swift in Sources */,
+				8408301223F517C3004AF5A2 /* APIServiceError.swift in Sources */,
+				846924AA23F5587D00AED54C /* GJContact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
